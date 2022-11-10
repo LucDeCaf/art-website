@@ -1,18 +1,13 @@
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../utils/firebase";
-import Thumbnail from "../components/Thumbnail";
+import Thumbnail from "@components/Thumbnail";
+import { PostType } from "@lib/types";
 
 async function getPosts() {
-  const imagesRef = collection(db, "posts");
-  const docs = (await getDocs(imagesRef)).docs;
-  const posts: any[] = docs.map((doc) => ({
-    ...doc.data(),
-    id: doc.id,
-  }));
-  return posts;
+  const res = await fetch("/api/posts/get");
+  const data = await res.json();
+  return data as PostType[];
 }
 
-export default async function Home() {
+export default async function HomePage() {
   const posts = await getPosts();
 
   posts.sort((a, b) => b.likes - a.likes).splice(3);

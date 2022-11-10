@@ -1,4 +1,5 @@
 export interface PostType {
+  id: string;
   artist: string;
   title: string;
   description: string;

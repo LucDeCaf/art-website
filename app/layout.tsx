@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { AuthProvider } from "../lib/AuthContext";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
+import { AuthProvider } from "@lib/AuthContext";
 
 import "./globals.css";
 

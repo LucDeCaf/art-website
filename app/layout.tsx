@@ -17,10 +17,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400..900"
         />
       </head>
-      <body className="font-poppins relative">
+      <body className="bg-black text-white font-poppins">
         <AuthProvider>
           <Navbar />
-          {children}
+          <div className="bg-slate-700">
+            {children}
+          </div>
           <Footer />
         </AuthProvider>
       </body>

@@ -8,3 +8,11 @@ export interface PostType {
   likes: number;
   thumbnail: string;
 }
+
+export interface ArtistType {
+  id: string;
+  firstName: string;
+  lastName: string;
+  bio: string;
+  profileURL: string;
+}

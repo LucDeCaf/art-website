@@ -1,11 +1,5 @@
 import Thumbnail from "@components/Thumbnail";
-import { PostType } from "@lib/types";
-
-async function getPosts() {
-  const res = await fetch("/api/posts/get");
-  const data = await res.json();
-  return data as PostType[];
-}
+import { getPosts } from "@lib/posts";
 
 export default async function HomePage() {
   const posts = await getPosts();
@@ -13,7 +7,7 @@ export default async function HomePage() {
   posts.sort((a, b) => b.likes - a.likes).splice(3);
 
   return (
-    <main className="bg-slate-700 text-white py-12">
+    <main className="py-12">
       <h1 className="text-6xl underline underline-offset-8 text-center font-semibold tracking-wide mb-12">
         Welcome!
       </h1>

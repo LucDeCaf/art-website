@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="h-16 bg-slate-900 flex items-center justify-between px-24">
+    <footer className="h-16 bg-slate-900 flex items-center justify-between px-12">
       <h1 className="text-slate-500 font-bold text-2xl">
         &copy; Luc de Cafmeyer
       </h1>

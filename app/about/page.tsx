@@ -9,7 +9,14 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-slate-600 p-4 rounded-md min-h-[24rem]">
           <div className="relative w-full h-full">
-            <Image src="/ldecafmeyer.jpg" alt="Website Creator" fill className="object-contain" />
+            <Image
+              src="/ldecafmeyer.jpg"
+              alt="Website Creator"
+              fill
+              className="object-contain"
+              priority
+              loading="eager"
+            />
           </div>
         </div>
         <div className="bg-slate-600 p-4 rounded-md">

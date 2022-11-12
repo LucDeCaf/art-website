@@ -22,7 +22,7 @@ export default async function HomePage() {
       <h1 className="text-5xl font-semibold text-center my-8 tracking-wide underline underline-offset-4">
         Top Posts
       </h1>
-      <div className="grid grid-cols-3 p-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-4">
         {posts.map((post) => (
           <Thumbnail key={post.id} post={post} />
         ))}

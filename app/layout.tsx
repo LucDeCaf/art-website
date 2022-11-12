@@ -1,8 +1,12 @@
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import { AuthProvider } from "@lib/AuthContext";
-
+import { Poppins } from "@next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export default function RootLayout({
   children,
@@ -10,12 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400..900"
-        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -34,6 +34,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ArtLuc - Rallim Prep</title>
       </head>
       <body className="bg-black text-white font-poppins">

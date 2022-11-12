@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import { useEffect } from "react";
 import { createContext, useContext, ReactNode, useState } from "react";
-import { auth } from "../utils/firebase";
+import { auth } from "@utils/firebase";
 
 interface ContextType {
   user: User | null;

@@ -34,6 +34,7 @@ export default function LoginPage() {
           value={formData.password}
           onChange={handleChange}
         />
+        <button className="" type="submit">Login</button>
       </form>
     </main>
   );

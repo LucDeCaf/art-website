@@ -37,7 +37,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
         <div className="flex">
           <Profile artist={artist} />
           <div className="ml-8">
-            <h2 className="text-4xl font-semibold underline mb-3">
+            <h2 className="text-4xl font-semibold mb-3">
               {artist.firstName} {artist.lastName}
             </h2>
             <p className="text-3xl">{artist.bio}</p>

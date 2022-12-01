@@ -4,6 +4,7 @@ import { getPosts } from "@lib/posts";
 export default async function HomePage() {
   const posts = await getPosts();
 
+  posts.sort();
   posts.sort((a, b) => b.likes - a.likes).splice(3);
 
   return (

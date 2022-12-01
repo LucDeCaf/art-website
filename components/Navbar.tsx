@@ -3,11 +3,10 @@ import { ReactNode } from "react";
 
 export default function Navbar() {
   return (
-    <nav className="grid grid-cols-4 bg-slate-900 text-white h-20 w-full sticky top-0 z-50">
+    <nav className="grid grid-cols-3 bg-slate-900 text-white h-20 w-full sticky top-0 z-50">
       <NavItem path="/">Home</NavItem>
       <NavItem path="/posts">Posts</NavItem>
       <NavItem path="/about">About</NavItem>
-      <NavItem path="/login">Login</NavItem>
     </nav>
   );
 }

@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      height: {
+        fit: "calc(100vh - 9rem)"
+      }
     },
   },
   plugins: [],

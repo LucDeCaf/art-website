@@ -1,3 +1,5 @@
+"use client"
+
 import Profile from "@components/Profile";
 import { getPost } from "@lib/posts";
 import { getArtist } from "@lib/artists";

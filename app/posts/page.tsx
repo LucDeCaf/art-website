@@ -1,3 +1,5 @@
+"use client"
+
 import Thumbnail from "@components/Thumbnail";
 import { getPosts } from "@lib/posts";
 

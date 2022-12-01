@@ -17,7 +17,6 @@ export default function Thumbnail({ post }: { post: PostType }) {
       </Link>
       <div className="h-auto p-4">
         <h2 className="text-3xl font-semibold tracking-wide">{post.title}</h2>
-        <p className="text-lg font-medium mt-2">{post.description}</p>
       </div>
     </div>
   );
